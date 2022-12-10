@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>한류 다루기-메인 페이지</title>
+
+    <script>
+      function over(obj) {
+        obj.src = 'pics/korea-wall.jpg'
+      }
+      function out(obj) {
+        obj.src = 'pics/korean-flag-1920.jpg'
+      }
+    </script>
+    <style>
+      body {
+        background-color: #ffffe0;
+      }
+      div {
+        border: 3px solid white;
+      }
+      #fixed {
+        position: fixed;
+        background-color: greenyellow;
+        left: 600px;
+        top: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <a
+        href="make_page.html"
+        onmouseover="this.style.backgroundColor='red'"
+        onmouseout="this.style.backgroundColor='blue'"
+        >한류 다루기</a
+      >
+    </h1>
+    <h2><dd>'한류 다루기'에 오신걸 환영합니다.</dd></h2>
+    <hr />
+    <div id="fixed">
+      <ui>
+        <li>
+          <a href="korea_what.html">한류란 무엇인가</a>
+        </li>
+        <li><a href="korea_now.html">한류의 현재 위치</a></li>
+        <li><a href="korea_history.html">한류의 역사</a></li>
+        <li><a href="korea_continent.html">대륙별 한류</a></li></ui
+      >
+    </div>
+    <hr />
+    <img
+      src="pics\korean-flag-1920.jpg"
+      width="500"
+      alt="한국 국기"
+      onmouseover="over(this)"
+      onmouseout="out(this)"
+    />
+  </body>
+</html>
